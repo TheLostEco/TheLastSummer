@@ -1,0 +1,376 @@
+[gd_scene format=3 uid="uid://da67dktn4ues4"]
+
+[ext_resource type="Script" uid="uid://cddycim36ubgi" path="res://Scripts/player.gd" id="1_3eeal"]
+[ext_resource type="Texture2D" uid="uid://brrjwags4vyww" path="res://Assets/Player1.png" id="1_6l3be"]
+[ext_resource type="Shader" uid="uid://b26g4c2gwiebv" path="res://Scripts/blur.gdshader" id="3_jvxg0"]
+[ext_resource type="Texture2D" uid="uid://s7wdiyqnadn6" path="res://Assets/list.jpg" id="4_mud5u"]
+[ext_resource type="AudioStream" uid="uid://cnfndto27mxk4" path="res://Assets/freesound_community-sand-walk-106366.mp3" id="5_fvocf"]
+[ext_resource type="AudioStream" uid="uid://cbj17pkk0exoo" path="res://Assets/mrstokes302-deep-breath-shaky-sfx-mrstokes302-443189.mp3" id="6_pmp2f"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6l3be"]
+height = 48.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mud5u"]
+shader = ExtResource("3_jvxg0")
+shader_parameter/radius = 0.6250000296875
+shader_parameter/softness = 0.4
+shader_parameter/max_blur = 2.5
+shader_parameter/vignette_color = Color(0, 0, 0, 1)
+shader_parameter/vignette_opacity = 0.5370000255075
+
+[sub_resource type="Animation" id="Animation_jvxg0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player1:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.5707964]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Player1:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.059, 0.055)]
+}
+
+[sub_resource type="Animation" id="Animation_fvocf"]
+resource_name = "idle"
+length = 0.46
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player1:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.43333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.055, 0.055), Vector2(0.059, 0.055)]
+}
+
+[sub_resource type="Animation" id="Animation_mud5u"]
+resource_name = "walk"
+length = 0.28
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player1:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.26666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-1.6688141, -1.4918453]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fvocf"]
+_data = {
+&"RESET": SubResource("Animation_jvxg0"),
+&"idle": SubResource("Animation_fvocf"),
+&"walk": SubResource("Animation_mud5u")
+}
+
+[sub_resource type="Animation" id="Animation_3pik8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/ColorRect/List:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/ColorRect/List/ColorRect2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/ColorRect/List/ColorRect3:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/ColorRect/List/ColorRect5:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/ColorRect/List/ColorRect4:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_adgam"]
+resource_name = "list_close"
+length = 0.205
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/ColorRect/List:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/ColorRect/List/ColorRect2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.205),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/ColorRect/List/ColorRect3:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.205),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/ColorRect/List/ColorRect5:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.205),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/ColorRect/List/ColorRect4:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.205),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_pmp2f"]
+resource_name = "list_open"
+length = 0.225
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/ColorRect/List:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/ColorRect/List/ColorRect2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.225),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/ColorRect/List/ColorRect3:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.225),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/ColorRect/List/ColorRect5:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.225),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/ColorRect/List/ColorRect4:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.225),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3pik8"]
+_data = {
+&"RESET": SubResource("Animation_3pik8"),
+&"list_close": SubResource("Animation_adgam"),
+&"list_open": SubResource("Animation_pmp2f")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=122246558]
+script = ExtResource("1_3eeal")
+
+[node name="Player1" type="Sprite2D" parent="." unique_id=135430222]
+position = Vector2(2, 7.1054274e-15)
+rotation = -1.5707964
+scale = Vector2(0.059, 0.055)
+texture = ExtResource("1_6l3be")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=840325463]
+position = Vector2(1, 0)
+shape = SubResource("CapsuleShape2D_6l3be")
+
+[node name="Camera2D2" type="Camera2D" parent="." unique_id=1418675756]
+position = Vector2(60, 23)
+enabled = false
+limit_left = 3
+limit_top = -26
+limit_right = 1153
+limit_bottom = 942
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=749469225]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1743447832]
+material = SubResource("ShaderMaterial_mud5u")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="List" type="Sprite2D" parent="CanvasLayer/ColorRect" unique_id=1021042069]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(171, 167)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("4_mud5u")
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/ColorRect/List" unique_id=1749894651]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -1318.1819
+offset_top = -454.54556
+offset_right = 1445.4546
+offset_bottom = -418.1818
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="CanvasLayer/ColorRect/List" unique_id=1207845245]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -1327.2728
+offset_top = 9.090942
+offset_right = 1436.3636
+offset_bottom = 45.454712
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="CanvasLayer/ColorRect/List" unique_id=2099763494]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -1318.1818
+offset_top = 427.27277
+offset_right = 1445.4547
+offset_bottom = 463.63654
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="CanvasLayer/ColorRect/List" unique_id=1325044241]
+unique_name_in_owner = true
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -1336.3635
+offset_top = 809.09094
+offset_right = 1427.273
+offset_bottom = 845.4547
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1778573881]
+libraries/ = SubResource("AnimationLibrary_fvocf")
+
+[node name="list" type="AnimationPlayer" parent="." unique_id=1013098336]
+libraries/ = SubResource("AnimationLibrary_3pik8")
+
+[node name="walk" type="AudioStreamPlayer" parent="." unique_id=1429342983]
+stream = ExtResource("5_fvocf")
+
+[node name="idle" type="AudioStreamPlayer" parent="." unique_id=1933123364]
+stream = ExtResource("6_pmp2f")
+autoplay = true

@@ -1,0 +1,1836 @@
+[gd_scene format=4 uid="uid://6igufqb1mhup"]
+
+[ext_resource type="Script" uid="uid://bu14q0425fhdu" path="res://Scripts/main.gd" id="1_2ix4a"]
+[ext_resource type="Texture2D" uid="uid://cdexq323i2sxs" path="res://Assets/school.jpeg" id="2_r34rm"]
+[ext_resource type="Texture2D" uid="uid://6n0ift1kd4le" path="res://Assets/fuckyou.png" id="3_yoaul"]
+[ext_resource type="Shader" uid="uid://b26g4c2gwiebv" path="res://Scripts/blur.gdshader" id="4_2wwxx"]
+[ext_resource type="Texture2D" uid="uid://d05whxetrablj" path="res://Assets/Fishing_rod.png" id="4_3amdw"]
+[ext_resource type="Texture2D" uid="uid://bmkqiuy5iak82" path="res://Assets/fishing_line.png" id="5_1xcnr"]
+[ext_resource type="PackedScene" uid="uid://da67dktn4ues4" path="res://Scene/Player.tscn" id="5_3amdw"]
+[ext_resource type="Texture2D" uid="uid://douv4omb2ctqw" path="res://Assets/IMG_20260605_161320-01.jpeg" id="6_1xcnr"]
+[ext_resource type="Texture2D" uid="uid://vkd1hoey3gr1" path="res://Assets/splash.png" id="7_ow1sv"]
+[ext_resource type="Texture2D" uid="uid://b1edkis3ihfqk" path="res://Assets/clock_hand.png" id="8_3pt4j"]
+[ext_resource type="Script" uid="uid://1tsd0omr0bae" path="res://Scripts/fish_clock.gd" id="8_7y4ci"]
+[ext_resource type="Texture2D" uid="uid://v3icv8gt0ki7" path="res://Assets/clock_hand1.png" id="9_3pt4j"]
+[ext_resource type="Texture2D" uid="uid://cb38583ftuheg" path="res://Assets/clock_hand2.png" id="10_7y4ci"]
+[ext_resource type="Texture2D" uid="uid://bb4sh0a0cj64d" path="res://Assets/Clock_hand3.png" id="12_mxd2g"]
+[ext_resource type="Texture2D" uid="uid://bomldosajv42h" path="res://Assets/clock_hand4.png" id="13_0sxm5"]
+[ext_resource type="Texture2D" uid="uid://d3x0uxv62ydwe" path="res://Assets/IMG_20260531_214139-01-01.jpeg" id="13_hspdg"]
+[ext_resource type="Texture2D" uid="uid://bqqpg6mcv4s08" path="res://Assets/IMG_20260603_104436-01.jpeg" id="14_6njx3"]
+[ext_resource type="Texture2D" uid="uid://b6nr6adh46v54" path="res://Assets/IMG_20260603_104455-01.jpeg" id="15_0y2cb"]
+[ext_resource type="Texture2D" uid="uid://cemfof5yne1g0" path="res://Assets/IMG_20260604_111600-01.jpeg" id="17_0y2cb"]
+[ext_resource type="Script" uid="uid://tp0nyav6b03k" path="res://Scripts/activity.gd" id="17_p2wc2"]
+[ext_resource type="Texture2D" uid="uid://dyx8rcjs78fx2" path="res://Assets/Interact.png" id="20_jbas8"]
+[ext_resource type="Texture2D" uid="uid://bkm1vrnr62ifs" path="res://Assets/fish_prototype.png" id="21_p4j74"]
+[ext_resource type="Texture2D" uid="uid://dhmblceyue064" path="res://Assets/ice_cream-Sheet.png" id="22_hiice"]
+[ext_resource type="Script" uid="uid://bmuss35jpi2g1" path="res://Scripts/ice_cream_activity.gd" id="22_sor6r"]
+[ext_resource type="Texture2D" uid="uid://ccqxnij7nf1yh" path="res://Assets/icecream_room.jpg" id="24_pqe63"]
+[ext_resource type="Texture2D" uid="uid://carq48rxfxou1" path="res://1-Bit Platformer Tileset & Enviroment Pack (copy 1)/BackGround/background1.png" id="24_uctnp"]
+[ext_resource type="Texture2D" uid="uid://dvq5p7jvrsglr" path="res://Assets/game_parlor.jpg" id="25_aam5o"]
+[ext_resource type="Texture2D" uid="uid://dg2ffrvqhyhlm" path="res://1-Bit Platformer Tileset & Enviroment Pack (copy 1)/BackGround/background2.png" id="25_m37ut"]
+[ext_resource type="Texture2D" uid="uid://csvi3ai58ky6m" path="res://1-Bit Platformer Tileset & Enviroment Pack (copy 1)/BackGround/background3.png" id="26_yoaul"]
+[ext_resource type="Texture2D" uid="uid://pqxqcop1dgsv" path="res://1-Bit Platformer Tileset & Enviroment Pack (copy 1)/Tileset/Tileset.png" id="27_mepbf"]
+[ext_resource type="Texture2D" uid="uid://24al7hdeepii" path="res://1-Bit Platformer Tileset & Enviroment Pack (copy 1)/Player/Idle.png" id="28_dvq1j"]
+[ext_resource type="Script" uid="uid://dcii60tyg7lnt" path="res://Scripts/umm.gd" id="28_m37ut"]
+[ext_resource type="AudioStream" uid="uid://dhwquxuor041o" path="res://Assets/freesound_community-carrotnom-92106.mp3" id="33_dvq1j"]
+[ext_resource type="AudioStream" uid="uid://cgja7gy0xfy2i" path="res://Assets/Dark Ambient Music (No Copyright).mp3" id="33_mepbf"]
+[ext_resource type="AudioStream" uid="uid://cv2lb5nyyed06" path="res://Assets/data_pion-sfx42-click-sel-534293.mp3" id="35_50v0s"]
+[ext_resource type="AudioStream" uid="uid://nr1l2ug711k5" path="res://Assets/litupsubway-ui-open-sfx-513358.mp3" id="36_mu7ye"]
+[ext_resource type="AudioStream" uid="uid://bgsdpj2kmow64" path="res://Assets/freesound_community-fish-splashing-release-2-40947.mp3" id="37_2oiod"]
+[ext_resource type="Texture2D" uid="uid://1yrt4fco5wdx" path="res://Assets/die.jpg" id="38_8bkap"]
+[ext_resource type="AudioStream" uid="uid://tdhyxncleeno" path="res://Assets/dragon-studio-slow-cinematic-clock-ticking-357979.mp3" id="39_b0nqf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0y2cb"]
+radius = 80.00625
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ix4a"]
+size = Vector2(1148, 66)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p2wc2"]
+size = Vector2(52, 937)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jbas8"]
+size = Vector2(23.82016, 395.39008)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4j74"]
+size = Vector2(12.102219, 490.16727)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hiice"]
+size = Vector2(17.490822, 405.5561)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sor6r"]
+size = Vector2(18.59998, 173.38443)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pqe63"]
+size = Vector2(23.35245, 443.49274)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bveb"]
+size = Vector2(161.06549, 23.206436)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3amdw"]
+shader = ExtResource("4_2wwxx")
+shader_parameter/radius = 0.6250000296875
+shader_parameter/softness = 0.4
+shader_parameter/max_blur = 2.5
+shader_parameter/vignette_color = Color(0, 0, 0, 1)
+shader_parameter/vignette_opacity = 0.5370000255075
+
+[sub_resource type="Animation" id="Animation_jbas8"]
+resource_name = "Caught_fish"
+length = 3.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FishingRod:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.9024547, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.41659203, 0.41659203, 0.49450353]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FishingLine:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.31, 1.1021405, 1.3666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.32142857, 0.375), Vector2(0.321, 0.455), Vector2(0.321, 0.455), Vector2(0.321, 0.24)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FishingLine:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.31, 0.9024547),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.20002383, 0.20002383]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FishingLine:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.37, 0.45, 0.53, 0.9024547, 1.0960277, 1.3666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(743, 226), Vector2(774.00006, 192.00003), Vector2(775.635, 188.83774), Vector2(772.635, 197.83774), Vector2(769.635, 194.83774), Vector2(769.635, 194.83774), Vector2(786.00006, 182), Vector2(807.00006, 90.99999)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("FishingRod:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.37, 0.45, 0.53, 0.59, 0.6333333, 0.7, 0.77, 0.8311383, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(933.9725, 194.89542), Vector2(930.9725, 203.89542), Vector2(927.9725, 200.89542), Vector2(930.9725, 203.89542), Vector2(933.9725, 194.89542), Vector2(930.9725, 203.89542), Vector2(933.9725, 194.89542), Vector2(927.9725, 200.89542), Vector2(933.9725, 194.89542)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FishPrototype:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1, 1.0043468),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("FishPrototype:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1.0344396, 1.42),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(742, 394), Vector2(787, 205)]
+}
+
+[sub_resource type="Animation" id="Animation_1xcnr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FishingRod:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FishingLine:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FishingLine:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.32142857, 0.375)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FishingLine:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(743, 226)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("FishingRod:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(933.9725, 194.89542)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("FishPrototype:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("FishPrototype:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(742, 394)]
+}
+
+[sub_resource type="Animation" id="Animation_ow1sv"]
+resource_name = "something"
+length = 0.805
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FishingRod:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.02, 0.18, 0.42, 0.605, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.15263364, 0.0, 0.15263364, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FishingLine:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(-0.02, 0.16666667, 0.44, 0.605, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.066259645, 0.0, 0.066259645, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_75buv"]
+_data = {
+&"Caught_fish": SubResource("Animation_jbas8"),
+&"RESET": SubResource("Animation_1xcnr"),
+&"something": SubResource("Animation_ow1sv")
+}
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75buv"]
+atlas = ExtResource("7_ow1sv")
+region = Rect2(0, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2iwn"]
+atlas = ExtResource("7_ow1sv")
+region = Rect2(500, 0, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3pt4j"]
+atlas = ExtResource("7_ow1sv")
+region = Rect2(1000, 0, 500, 500)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7y4ci"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_75buv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2iwn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3pt4j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_3pt4j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fish Clock/1st:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fish Clock/1st/ClockHand3:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_7y4ci"]
+resource_name = "round_1"
+length = 1.57
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fish Clock/1st:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.57),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.2831855]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mxd2g"]
+_data = {
+&"RESET": SubResource("Animation_3pt4j"),
+&"round_1": SubResource("Animation_7y4ci")
+}
+
+[sub_resource type="Animation" id="Animation_mxd2g"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1st/ClockHand2:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.275, 0.275)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1st/ClockHand2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("1st/ClockHand3:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("1st/ClockHand3:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.275, 0.275)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("1st/ClockHand4:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("1st/ClockHand4:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.275, 0.275)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("ClockHand:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("ClockHand1:self_modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_0sxm5"]
+resource_name = "finish1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1st/ClockHand2:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.53333336, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.275, 0.275), Vector2(0.35, 0.35), Vector2(0.35, 0.35), Vector2(0.275, 0.275)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1st/ClockHand2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_6njx3"]
+resource_name = "finish2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1st/ClockHand3:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.56666666, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.275, 0.275), Vector2(0.34, 0.34), Vector2(0.34, 0.34), Vector2(0.275, 0.275)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1st/ClockHand3:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.16666667, 0.43333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2ix4a"]
+resource_name = "finish3"
+length = 1.74
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1st/ClockHand4:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.16666669, 0.53333336),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1st/ClockHand4:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.22),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.275, 0.275), Vector2(0.335, 0.335)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ClockHand:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1, 1.74),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ClockHand1:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1, 1.74),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hspdg"]
+_data = {
+&"RESET": SubResource("Animation_mxd2g"),
+&"finish1": SubResource("Animation_0sxm5"),
+&"finish2": SubResource("Animation_6njx3"),
+&"finish3": SubResource("Animation_2ix4a")
+}
+
+[sub_resource type="Animation" id="Animation_hspdg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1st/ClockHand3:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("1st/ClockHand4:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ClockHand:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(251.99998, 372)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("ClockHand1:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(252.24997, 373.24997)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("1st:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(251.99998, 372.99997)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Area2D:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("1st/ClockHand2:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.001),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_p2wc2"]
+resource_name = "fail"
+length = 1.265
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ClockHand:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.48, 0.56),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(251.99998, 372), Vector2(259, 372), Vector2(251.99998, 372), Vector2(245, 372), Vector2(251.99998, 372), Vector2(245, 372), Vector2(251.99998, 372)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ClockHand1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.48, 0.56),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(252.24997, 373.24997), Vector2(259.24997, 373.24997), Vector2(252.24997, 373.24997), Vector2(245, 373.25), Vector2(252.24997, 373.24997), Vector2(245, 373.25), Vector2(252.24997, 373.24997)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("1st:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.2816667, 0.4, 0.48, 0.56),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(251.99998, 372.99997), Vector2(259, 372.99997), Vector2(251.99998, 372.99997), Vector2(245, 373), Vector2(251.99998, 372.99997), Vector2(245, 373), Vector2(251.99998, 372.99997)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Area2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.48, 0.56),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(7, 0), Vector2(0, 0), Vector2(7, 0), Vector2(0, 0), Vector2(7, 0), Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("1st/ClockHand2:self_modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.68, 0.93),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("1st/ClockHand4:self_modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("1st/ClockHand3:self_modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.62),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_j63at"]
+resource_name = "round2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1st/ClockHand3:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.49, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_0y2cb"]
+resource_name = "round3"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("1st/ClockHand4:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.56666666, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6njx3"]
+_data = {
+&"RESET": SubResource("Animation_hspdg"),
+&"fail": SubResource("Animation_p2wc2"),
+&"round2": SubResource("Animation_j63at"),
+&"round3": SubResource("Animation_0y2cb")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0sxm5"]
+size = Vector2(4, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aam5o"]
+size = Vector2(773.0203, 17.311401)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nyb1q"]
+size = Vector2(379.24554, 38.244423)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xw8bv"]
+size = Vector2(416.00815, 30.6512)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wimqa"]
+size = Vector2(489.6604, 21.94706)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t372l"]
+size = Vector2(272.49945, 32.239815)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uctnp"]
+size = Vector2(576.7102, 33.418003)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m37ut"]
+radius = 6.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m37ut"]
+size = Vector2(1143.6549, 85.48657)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yoaul"]
+size = Vector2(548.60767, 102.79663)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mepbf"]
+size = Vector2(37.512695, 202.78247)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dvq1j"]
+size = Vector2(37.512695, 283.5558)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_50v0s"]
+size = Vector2(36.388428, 367.21686)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mu7ye"]
+size = Vector2(37.512695, 66.698654)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2oiod"]
+size = Vector2(853.09326, 24.422852)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8bkap"]
+size = Vector2(1149.2968, 21.802307)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ix4a"]
+radius = 83.15047
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2oiod"]
+radius = 282.44644
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0nqf"]
+size = Vector2(40, 890)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ot48q"]
+size = Vector2(40, 1196.2456)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2uk8d"]
+size = Vector2(20.56958, 1173.5278)
+
+[sub_resource type="Animation" id="Animation_p4j74"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hiice"]
+resource_name = "Transition"
+length = 0.63
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect2:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sor6r"]
+_data = {
+&"RESET": SubResource("Animation_p4j74"),
+&"Transition": SubResource("Animation_hiice")
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_50v0s"]
+texture = ExtResource("27_mepbf")
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+6:1/0 = 0
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+6:2/0 = 0
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+2:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+5:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+5:7/0 = 0
+4:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_mu7ye"]
+physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_50v0s")
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2oiod"]
+radius = 3.333374
+height = 6.666748
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cr44a"]
+size = Vector2(1794.0555, 78.49072)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tcekk"]
+size = Vector2(2235.5156, 78.49072)
+
+[sub_resource type="Animation" id="Animation_ot48q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Die:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("clock:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-80.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bg:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-10.0]
+}
+
+[sub_resource type="Animation" id="Animation_8bkap"]
+resource_name = "final"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Die:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("clock:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-80.0, -6.745]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("bg:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-10.0, -80.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b0nqf"]
+_data = {
+&"RESET": SubResource("Animation_ot48q"),
+&"final": SubResource("Animation_8bkap")
+}
+
+[node name="Main" type="Node2D" unique_id=1264573848]
+script = ExtResource("1_2ix4a")
+metadata/_edit_horizontal_guides_ = [342.0]
+
+[node name="School" type="Node2D" parent="." unique_id=1028820650]
+
+[node name="School2" type="Sprite2D" parent="School" unique_id=1227718542]
+position = Vector2(578, 458)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("2_r34rm")
+
+[node name="ToPark" type="Area2D" parent="School" unique_id=384405631]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="School/ToPark" unique_id=1223068534]
+position = Vector2(126, 372)
+shape = SubResource("CircleShape2D_0y2cb")
+
+[node name="walls" type="StaticBody2D" parent="School" unique_id=1694527489]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="School/walls" unique_id=460731756]
+position = Vector2(577, 903)
+shape = SubResource("RectangleShape2D_2ix4a")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="School/walls" unique_id=913191231]
+position = Vector2(577, -12)
+shape = SubResource("RectangleShape2D_2ix4a")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="School/walls" unique_id=473222491]
+position = Vector2(17, 443.5)
+shape = SubResource("RectangleShape2D_p2wc2")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="School/walls" unique_id=513623366]
+position = Vector2(1167, 413)
+shape = SubResource("RectangleShape2D_p2wc2")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="School/walls" unique_id=1808299405]
+position = Vector2(205.54141, 506.12216)
+rotation = -1.2269224
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_jbas8")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="School/walls" unique_id=1025765097]
+position = Vector2(207.30432, 698.05945)
+rotation = 0.95101255
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_p4j74")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="School/walls" unique_id=1629863136]
+position = Vector2(464.22467, 221.78175)
+rotation = 1.0773711
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_p4j74")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="School/walls" unique_id=1703669431]
+position = Vector2(388.02542, 374.22412)
+rotation = 1.9136903
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_hiice")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="School/walls" unique_id=201927367]
+position = Vector2(753.5825, 125.56702)
+rotation = 1.9136903
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_hiice")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="School/walls" unique_id=1906747472]
+position = Vector2(630.9441, 400.4643)
+rotation = -2.1929967
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_sor6r")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="School/walls" unique_id=959314617]
+position = Vector2(962.3568, 161.80966)
+rotation = -2.1929967
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_pqe63")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="School/walls" unique_id=79107370]
+position = Vector2(923.9654, 294.10608)
+rotation = -2.4565248
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_1bveb")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="School/walls" unique_id=540970312]
+position = Vector2(1070, 338.00003)
+rotation = -0.025463104
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_1bveb")
+
+[node name="SchoolToStreet" type="Area2D" parent="School" unique_id=1092815892]
+position = Vector2(159, 401)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="School/SchoolToStreet" unique_id=1385873959]
+position = Vector2(126, 372)
+shape = SubResource("CircleShape2D_0y2cb")
+
+[node name="SchoolToBeach" type="Area2D" parent="School" unique_id=1748176216]
+position = Vector2(885, -153)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="School/SchoolToBeach" unique_id=1131025608]
+position = Vector2(126, 372)
+shape = SubResource("CircleShape2D_0y2cb")
+
+[node name="Fuckyou" type="Sprite2D" parent="School" unique_id=366191582]
+position = Vector2(948.99994, 285)
+scale = Vector2(0.215, 0.215)
+texture = ExtResource("3_yoaul")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=538319109]
+visible = false
+material = SubResource("ShaderMaterial_3amdw")
+offset_top = -2.0
+offset_right = 1151.0
+offset_bottom = 648.0
+
+[node name="Fishing_GamePlay" type="Node2D" parent="." unique_id=244729616]
+visible = false
+z_index = 1
+position = Vector2(-3, 298)
+
+[node name="Img2026060516132001" type="Sprite2D" parent="Fishing_GamePlay" unique_id=1075543230]
+position = Vector2(582, 209)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("6_1xcnr")
+
+[node name="FishingRod" type="Sprite2D" parent="Fishing_GamePlay" unique_id=104580292]
+position = Vector2(933.9725, 194.89542)
+scale = Vector2(0.225, 0.225)
+texture = ExtResource("4_3amdw")
+
+[node name="FishingLine" type="Sprite2D" parent="Fishing_GamePlay" unique_id=1732280468]
+position = Vector2(743, 226)
+scale = Vector2(0.32142857, 0.375)
+texture = ExtResource("5_1xcnr")
+
+[node name="FishPrototype" type="Sprite2D" parent="Fishing_GamePlay" unique_id=1407968488]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(742, 394)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("21_p4j74")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fishing_GamePlay" unique_id=1228379452]
+libraries/ = SubResource("AnimationLibrary_75buv")
+autoplay = &"something"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Fishing_GamePlay" unique_id=1391669206]
+position = Vector2(747, 441.3702)
+sprite_frames = SubResource("SpriteFrames_7y4ci")
+autoplay = "default"
+frame_progress = 0.17963204
+
+[node name="Fish Clock" type="Node2D" parent="Fishing_GamePlay" unique_id=522988125]
+script = ExtResource("8_7y4ci")
+
+[node name="fish_clock" type="AnimationPlayer" parent="Fishing_GamePlay/Fish Clock" unique_id=599623259]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_mxd2g")
+
+[node name="fish_clock_complete" type="AnimationPlayer" parent="Fishing_GamePlay/Fish Clock" unique_id=288459444]
+libraries/ = SubResource("AnimationLibrary_hspdg")
+
+[node name="round apper" type="AnimationPlayer" parent="Fishing_GamePlay/Fish Clock" unique_id=535434700]
+libraries/ = SubResource("AnimationLibrary_6njx3")
+
+[node name="ClockHand" type="Sprite2D" parent="Fishing_GamePlay/Fish Clock" unique_id=1858748091]
+position = Vector2(251.99998, 372)
+scale = Vector2(0.22, 0.22)
+texture = ExtResource("8_3pt4j")
+
+[node name="ClockHand1" type="Sprite2D" parent="Fishing_GamePlay/Fish Clock" unique_id=893889407]
+position = Vector2(252.24997, 373.24997)
+rotation = -2.0669205
+scale = Vector2(0.275, 0.275)
+texture = ExtResource("9_3pt4j")
+
+[node name="Area2D" type="Area2D" parent="Fishing_GamePlay/Fish Clock" unique_id=2000601332]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fishing_GamePlay/Fish Clock/Area2D" unique_id=1162313411]
+position = Vector2(252, 347)
+shape = SubResource("RectangleShape2D_0sxm5")
+
+[node name="1st" type="Area2D" parent="Fishing_GamePlay/Fish Clock" unique_id=1253935357]
+position = Vector2(251.99998, 372.99997)
+monitoring = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fishing_GamePlay/Fish Clock/1st" unique_id=948643116]
+position = Vector2(-251.30164, -373.4709)
+polygon = PackedVector2Array(218, 373, 235, 373, 236, 368, 240, 361, 247, 357, 253, 356, 259, 357, 266, 362, 269, 368, 269, 373, 287, 373, 285, 361, 276, 348, 263, 340, 247, 338, 232, 344, 224, 353, 219, 362)
+
+[node name="ClockHand2" type="Sprite2D" parent="Fishing_GamePlay/Fish Clock/1st" unique_id=1214287355]
+position = Vector2(-9.417534e-06, 2.9534101e-05)
+scale = Vector2(0.275, 0.275)
+texture = ExtResource("10_7y4ci")
+region_rect = Rect2(5.5, 32.5, 248.5, 95.5)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Fishing_GamePlay/Fish Clock/1st" unique_id=673817773]
+position = Vector2(-251.30164, -373.4709)
+polygon = PackedVector2Array(237.30165, 362.47092, 244.30165, 357.47092, 253, 356, 259, 357, 266, 362, 279.30164, 352.47092, 272.30164, 345.47092, 263, 340, 247, 338, 232, 344, 222.30165, 354.47092)
+disabled = true
+
+[node name="ClockHand3" type="Sprite2D" parent="Fishing_GamePlay/Fish Clock/1st" unique_id=2104745121]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(1.5258789e-05, 3.0517578e-05)
+rotation = -0.054990456
+scale = Vector2(0.275, 0.275)
+texture = ExtResource("12_mxd2g")
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Fishing_GamePlay/Fish Clock/1st" unique_id=512606032]
+position = Vector2(-251.30164, -373.4709)
+polygon = PackedVector2Array(253.30165, 355.47092, 264.30164, 340.47092, 255.30165, 338.47092, 247, 338, 238.30165, 341.47092, 248.68707, 355.7852)
+disabled = true
+
+[node name="ClockHand4" type="Sprite2D" parent="Fishing_GamePlay/Fish Clock/1st" unique_id=1357615213]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(1.5258789e-05, 3.0517578e-05)
+scale = Vector2(0.275, 0.275)
+texture = ExtResource("13_0sxm5")
+
+[node name="Park" type="Node2D" parent="." unique_id=1724365026]
+
+[node name="Park" type="Sprite2D" parent="Park" unique_id=941506040]
+position = Vector2(-2492, 335)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("13_hspdg")
+
+[node name="ParkToSchool" type="Area2D" parent="Park" unique_id=1568101206]
+position = Vector2(-2031, 115)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Park/ParkToSchool" unique_id=1269521104]
+position = Vector2(126, 372)
+shape = SubResource("CircleShape2D_0y2cb")
+
+[node name="walls" type="StaticBody2D" parent="Park" unique_id=1668860383]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Park/walls" unique_id=1568324249]
+position = Vector2(-2246, 254.00012)
+rotation = 0.43835217
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_aam5o")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Park/walls" unique_id=776238416]
+position = Vector2(-2909.3203, 387.6797)
+rotation = 0.4683239
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_nyb1q")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Park/walls" unique_id=894700336]
+position = Vector2(-2627.1794, 587.8729)
+rotation = 0.63294464
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_xw8bv")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Park/walls" unique_id=1230825464]
+position = Vector2(-2821, 199.00003)
+rotation = 2.6608737
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_wimqa")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Park/walls" unique_id=668759587]
+position = Vector2(-2677.9363, 421.92334)
+rotation = 2.6816676
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_t372l")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Park/walls" unique_id=290858255]
+position = Vector2(-2360, 271.99988)
+rotation = 2.6816676
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_t372l")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Park/walls" unique_id=698693376]
+position = Vector2(-2191.6133, 631.4012)
+rotation = 2.89569
+scale = Vector2(0.99999964, 0.99999964)
+shape = SubResource("RectangleShape2D_uctnp")
+
+[node name="Street" type="Node2D" parent="." unique_id=1454035532]
+
+[node name="Street" type="Sprite2D" parent="Street" unique_id=1522826869]
+position = Vector2(-1536, 2328)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("14_6njx3")
+
+[node name="StreetToSchool" type="Area2D" parent="Street" unique_id=233735707]
+position = Vector2(-1217, 1780)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Street/StreetToSchool" unique_id=1528124260]
+position = Vector2(126, 372)
+shape = SubResource("CircleShape2D_0y2cb")
+
+[node name="game_level_com" type="Area2D" parent="Street" unique_id=1965114967]
+position = Vector2(1691, 188)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Street/game_level_com" unique_id=1844340603]
+z_index = 1
+position = Vector2(53, 375)
+shape = SubResource("CircleShape2D_m37ut")
+
+[node name="StreetToRiver" type="Area2D" parent="Street" unique_id=272719216]
+position = Vector2(-2029, 2008)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Street/StreetToRiver" unique_id=2134591725]
+position = Vector2(126, 372)
+shape = SubResource("CircleShape2D_0y2cb")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Street" unique_id=666883006]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Street/StaticBody2D" unique_id=719917650]
+position = Vector2(-1564.9323, 2569.663)
+rotation = -0.61086524
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_m37ut")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Street/StaticBody2D" unique_id=321580494]
+position = Vector2(-1816, 1796.9999)
+rotation = -1.5959983
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_m37ut")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Street/StaticBody2D" unique_id=226547100]
+position = Vector2(-1428.2714, 2230.92)
+rotation = -0.5618016
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("RectangleShape2D_yoaul")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Street/StaticBody2D" unique_id=2002158034]
+position = Vector2(-1725.384, 2387.5874)
+rotation = -1.2390789
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_mepbf")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Street/StaticBody2D" unique_id=1723941653]
+position = Vector2(-1982.9999, 2764)
+rotation = -0.9718891
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_mepbf")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Street/StaticBody2D" unique_id=1266830065]
+position = Vector2(-1885.447, 2474.8613)
+rotation = -1.1939638
+scale = Vector2(0.99999964, 0.99999964)
+shape = SubResource("RectangleShape2D_dvq1j")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Street/StaticBody2D" unique_id=1689106646]
+position = Vector2(-1910, 2620.0002)
+rotation = -2.1610787
+scale = Vector2(0.99999964, 0.99999964)
+shape = SubResource("RectangleShape2D_50v0s")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Street/StaticBody2D" unique_id=1071568305]
+position = Vector2(-1738.9865, 2419.4602)
+rotation = -1.2390789
+scale = Vector2(0.9999995, 0.9999995)
+shape = SubResource("RectangleShape2D_mu7ye")
+
+[node name="River" type="Node2D" parent="." unique_id=1659404768]
+position = Vector2(-7643, 2217)
+
+[node name="River" type="Sprite2D" parent="River" unique_id=1580414655]
+position = Vector2(3499, -205.00006)
+scale = Vector2(0.365, 0.365)
+texture = ExtResource("15_0y2cb")
+
+[node name="RiverToStreet" type="Area2D" parent="River" unique_id=1566385265]
+position = Vector2(3675, -175)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="River/RiverToStreet" unique_id=937546982]
+position = Vector2(126, 372)
+shape = SubResource("CircleShape2D_0y2cb")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="River/RiverToStreet" unique_id=2036675063]
+position = Vector2(126, 372)
+shape = SubResource("CircleShape2D_0y2cb")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="River" unique_id=1193001569]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="River/StaticBody2D" unique_id=400752723]
+position = Vector2(3348, 297)
+rotation = -0.052731425
+shape = SubResource("RectangleShape2D_2oiod")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="River/StaticBody2D" unique_id=1945313370]
+position = Vector2(4155, -41.000244)
+rotation = -0.75371534
+shape = SubResource("RectangleShape2D_2oiod")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="River/StaticBody2D" unique_id=1922225692]
+position = Vector2(2991, 173)
+rotation = -1.7339607
+shape = SubResource("RectangleShape2D_2oiod")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="River/StaticBody2D" unique_id=1893595377]
+position = Vector2(3992, -379)
+rotation = -1.865763
+shape = SubResource("RectangleShape2D_2oiod")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="River/StaticBody2D" unique_id=1604188353]
+position = Vector2(3489, -120)
+rotation = 2.56881
+shape = SubResource("RectangleShape2D_8bkap")
+
+[node name="activity" type="Area2D" parent="River" unique_id=1223866293]
+script = ExtResource("17_p2wc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="River/activity" unique_id=35355365]
+position = Vector2(3541, -98)
+shape = SubResource("CircleShape2D_2ix4a")
+
+[node name="Ice_cream_enter" type="Area2D" parent="River" unique_id=140122314]
+position = Vector2(2748, 174)
+script = ExtResource("17_p2wc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="River/Ice_cream_enter" unique_id=790491725]
+position = Vector2(3542, -79)
+shape = SubResource("CircleShape2D_2ix4a")
+
+[node name="Game_parlour_enter2" type="Area2D" parent="River" unique_id=1019412498]
+position = Vector2(2547, 283)
+script = ExtResource("17_p2wc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="River/Game_parlour_enter2" unique_id=1340704942]
+position = Vector2(3542, -79)
+shape = SubResource("CircleShape2D_2ix4a")
+
+[node name="Ice_cream" type="Area2D" parent="River" unique_id=842147078]
+position = Vector2(4656, 3)
+script = ExtResource("17_p2wc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="River/Ice_cream" unique_id=839020414]
+z_index = 1
+position = Vector2(3516, -107)
+shape = SubResource("CircleShape2D_2ix4a")
+
+[node name="Game_activity" type="Area2D" parent="River" unique_id=1478822706]
+position = Vector2(6331, -31)
+script = ExtResource("17_p2wc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="River/Game_activity" unique_id=1413010564]
+z_index = 1
+position = Vector2(3516, -107)
+shape = SubResource("CircleShape2D_2ix4a")
+
+[node name="Beach_activity" type="Area2D" parent="River" unique_id=1548563184]
+position = Vector2(9928, 908)
+script = ExtResource("17_p2wc2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="River/Beach_activity" unique_id=980377381]
+z_index = 1
+position = Vector2(3676, -21)
+shape = SubResource("CircleShape2D_2oiod")
+
+[node name="Ice_room" type="Node2D" parent="." unique_id=1962262873]
+
+[node name="IcecreamRoom" type="Sprite2D" parent="Ice_room" unique_id=82298484]
+position = Vector2(620, 2018)
+scale = Vector2(0.32, 0.32)
+texture = ExtResource("24_pqe63")
+
+[node name="Beach" type="Node2D" parent="." unique_id=903408340]
+
+[node name="Beach" type="Sprite2D" parent="Beach" unique_id=1908650088]
+position = Vector2(5701, 2985.9998)
+scale = Vector2(0.285, 0.285)
+texture = ExtResource("17_0y2cb")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Beach" unique_id=1695253914]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Beach/StaticBody2D" unique_id=1393607664]
+position = Vector2(5108, 2985)
+shape = SubResource("RectangleShape2D_b0nqf")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Beach/StaticBody2D" unique_id=709092056]
+position = Vector2(6293, 2993)
+shape = SubResource("RectangleShape2D_b0nqf")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Beach/StaticBody2D" unique_id=413365474]
+position = Vector2(5704.1206, 2535.856)
+rotation = 1.5763865
+shape = SubResource("RectangleShape2D_ot48q")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Beach/StaticBody2D" unique_id=1452677444]
+position = Vector2(5680, 3422.9998)
+rotation = 1.5513715
+shape = SubResource("RectangleShape2D_2uk8d")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Beach/StaticBody2D" unique_id=1067928787]
+position = Vector2(5940.0005, 3049)
+rotation = 0.7824615
+shape = SubResource("RectangleShape2D_2uk8d")
+
+[node name="CharacterBody2D" parent="." unique_id=122246558 instance=ExtResource("5_3amdw")]
+z_index = 1
+position = Vector2(578, 265)
+
+[node name="CameraSchool" type="Camera2D" parent="CharacterBody2D" unique_id=87723461]
+position = Vector2(60, 23)
+limit_left = 3
+limit_top = -26
+limit_right = 1153
+limit_bottom = 942
+position_smoothing_enabled = true
+
+[node name="CameraPark" type="Camera2D" parent="CharacterBody2D" unique_id=570932112]
+position = Vector2(60, 23)
+enabled = false
+limit_left = -3063
+limit_top = -26
+limit_right = -1919
+limit_bottom = 670
+position_smoothing_enabled = true
+
+[node name="CameraStreet" type="Camera2D" parent="CharacterBody2D" unique_id=1399458951]
+position = Vector2(-211, -80)
+enabled = false
+limit_left = -2153
+limit_top = 1761
+limit_right = -918
+limit_bottom = 2893
+position_smoothing_enabled = true
+
+[node name="CameraRiver" type="Camera2D" parent="CharacterBody2D" unique_id=1254573662]
+position = Vector2(-2861, -31)
+enabled = false
+limit_left = -4743
+limit_top = 1600
+limit_right = -3545
+limit_bottom = 2533
+position_smoothing_enabled = true
+
+[node name="Camerarooms" type="Camera2D" parent="CharacterBody2D" unique_id=384975061]
+position = Vector2(49, 1756)
+enabled = false
+limit_left = 0
+limit_top = 1694
+limit_right = 1264
+limit_bottom = 2483
+
+[node name="CameraGame" type="Camera2D" parent="CharacterBody2D" unique_id=2087218825]
+position = Vector2(1322, 1742.0001)
+enabled = false
+limit_left = 1449
+limit_top = 1694
+limit_right = 2599
+limit_bottom = 2483
+
+[node name="Interact2" type="Sprite2D" parent="CharacterBody2D" unique_id=1679360325]
+visible = false
+position = Vector2(0, -46)
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("20_jbas8")
+
+[node name="Scene_transition" type="Node2D" parent="." unique_id=325853432]
+
+[node name="ColorRect2" type="ColorRect" parent="Scene_transition" unique_id=471524371]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 2
+offset_left = -6100.0
+offset_top = -2655.0
+offset_right = 6858.0
+offset_bottom = 5159.0
+color = Color(0.8509804, 0.78431374, 0.7058824, 1)
+
+[node name="Transition" type="AnimationPlayer" parent="Scene_transition" unique_id=659631672]
+libraries/ = SubResource("AnimationLibrary_sor6r")
+
+[node name="Game" type="Node2D" parent="." unique_id=1746474258]
+position = Vector2(336.00003, 1408)
+scale = Vector2(0.3, 0.3)
+
+[node name="GameParlor" type="Sprite2D" parent="Game" unique_id=222870279]
+position = Vector2(5663.333, 2236.6665)
+texture = ExtResource("25_aam5o")
+
+[node name="playing_game" type="Node2D" parent="Game" unique_id=137547392]
+visible = false
+position = Vector2(20536.666, -5290)
+
+[node name="Background1" type="Sprite2D" parent="Game/playing_game" unique_id=861948265]
+position = Vector2(-16110.347, 2386.4937)
+scale = Vector2(1.193, 1.193)
+texture = ExtResource("24_uctnp")
+
+[node name="Background2" type="Sprite2D" parent="Game/playing_game" unique_id=149357293]
+position = Vector2(-16110.347, 2386.4937)
+scale = Vector2(1.193, 1.193)
+texture = ExtResource("25_m37ut")
+
+[node name="Background3" type="Sprite2D" parent="Game/playing_game" unique_id=2139460470]
+position = Vector2(-16110.347, 2386.4937)
+scale = Vector2(1.193, 1.193)
+texture = ExtResource("26_yoaul")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Game/playing_game" unique_id=765441939]
+tile_map_data = PackedByteArray("AAAE/JsAAAACAAEAAAAG/JsAAAACAAEAAAAF/JsAAAACAAEAAAAH/JsAAAADAAEAAAAH/JwAAAAFAAIAAAAI/JwAAAACAAEAAAAJ/JwAAAACAAEAAAAK/JwAAAACAAEAAAAL/JwAAAACAAEAAAAM/JwAAAACAAEAAAAN/JsAAAABAAEAAAAN/JwAAAAGAAIAAAAF/JoAAAAAAAcAAAAG/JoAAAABAAcAAAAJ/JsAAAACAAcAAAAK/JsAAAAFAAcAAAAI/JsAAAAAAAcAAAAL/JsAAAABAAcAAAAM/JsAAAACAAcAAAAO/JoAAAAAAAcAAAAP/JoAAAAAAAcAAAAO/JsAAAACAAEAAAAP/JsAAAACAAEAAAAO/JwAAAACAAIAAAAO/J0AAAACAAIAAAAO/J4AAAACAAIAAAAP/JwAAAACAAIAAAAP/J0AAAACAAIAAAAP/J4AAAACAAIAAAAE/JwAAAACAAIAAAAE/J0AAAACAAIAAAAE/J4AAAACAAIAAAAF/JwAAAACAAIAAAAF/J0AAAACAAIAAAAF/J4AAAACAAIAAAAF/J8AAAACAAIAAAAG/JwAAAACAAIAAAAG/J0AAAACAAIAAAAG/J4AAAACAAIAAAAH/J0AAAACAAIAAAAI/J0AAAACAAIAAAAJ/J0AAAACAAIAAAAK/J0AAAACAAIAAAAL/J0AAAACAAIAAAAM/J0AAAACAAIAAAAN/J0AAAACAAIAAAAH/J4AAAACAAIAAAAI/J4AAAACAAIAAAAJ/J4AAAACAAIAAAAK/J4AAAACAAIAAAAL/J4AAAACAAIAAAAM/J4AAAACAAIAAAAN/J4AAAACAAIAAAAQ/JsAAAACAAEAAAAR/JsAAAACAAEAAAAS/JsAAAACAAEAAAAT/JsAAAACAAEAAAAU/JoAAAABAAEAAAAU/JsAAAAGAAIAAAAV/JoAAAACAAEAAAAW/JoAAAACAAEAAAAX/JoAAAACAAEAAAAY/JoAAAACAAEAAAAZ/JoAAAACAAEAAAAa/JoAAAADAAEAAAAQ/JwAAAACAAIAAAAR/JwAAAACAAIAAAAS/JwAAAACAAIAAAAT/JwAAAACAAIAAAAU/JwAAAACAAIAAAAV/JwAAAACAAIAAAAW/JwAAAACAAIAAAAX/JwAAAACAAIAAAAQ/J0AAAACAAIAAAAR/J0AAAACAAIAAAAS/J0AAAACAAIAAAAT/J0AAAACAAIAAAAU/J0AAAACAAIAAAAV/J0AAAACAAIAAAAW/J0AAAACAAIAAAAX/J0AAAACAAIAAAAY/J0AAAACAAIAAAAZ/J0AAAACAAIAAAAa/J0AAAACAAIAAAAb/J0AAAACAAIAAAAV/JsAAAACAAIAAAAW/JsAAAACAAIAAAAX/JsAAAACAAIAAAAY/JsAAAACAAIAAAAZ/JsAAAACAAIAAAAb/JwAAAACAAEAAAAa/JwAAAAFAAIAAAAZ/JwAAAACAAIAAAAY/JwAAAACAAIAAAAa/JsAAAADAAIAAAAc/JwAAAACAAEAAAAd/JwAAAACAAEAAAAe/JwAAAACAAEAAAAf/JwAAAACAAEAAAAg/JwAAAACAAEAAAAc/J0AAAACAAIAAAAd/J0AAAACAAIAAAAe/J0AAAACAAIAAAAf/J0AAAACAAIAAAAg/J0AAAACAAIAAAAQ/J4AAAACAAIAAAAR/J4AAAACAAIAAAAS/J4AAAACAAIAAAAT/J4AAAACAAIAAAAU/J4AAAACAAIAAAAV/J4AAAACAAIAAAAW/J4AAAACAAIAAAAX/J4AAAACAAIAAAAY/J4AAAACAAIAAAAZ/J4AAAACAAIAAAAa/J4AAAACAAIAAAAb/J4AAAACAAIAAAAc/J4AAAACAAIAAAAd/J4AAAACAAIAAAAe/J4AAAACAAIAAAAf/J4AAAACAAIAAAAg/J4AAAACAAIAAAAW/JkAAAAAAAcAAAAX/JkAAAABAAcAAAAc/JsAAAAAAAcAAAAd/JsAAAABAAcAAAAe/JsAAAAAAAcAAAAf/JsAAAABAAcAAAAR/JoAAAAAAAcAAAAS/JoAAAABAAcAAAAT/JYAAAAEAAQAAAAT/JcAAAAEAAUAAAAU/JYAAAAFAAQAAAAU/JcAAAAFAAUAAAAU/JgAAAAFAAYAAAAU/JkAAAAFAAcAAAAV/JYAAAAGAAQAAAAV/JcAAAAGAAUAAAAJ/JgAAAAEAAQAAAAJ/JkAAAAEAAUAAAAK/JgAAAAFAAQAAAAK/JkAAAAFAAUAAAAK/JoAAAAFAAYAAAAL/JgAAAAGAAQAAAAL/JkAAAAGAAUAAAAh/JwAAAACAAEAAAAi/JwAAAACAAEAAAAh/J0AAAACAAIAAAAi/J0AAAACAAIAAAAi/J4AAAACAAIAAAAh/J4AAAACAAIAAAD/+5AAAAACAAIAAAD/+5EAAAACAAIAAAD/+5IAAAACAAIAAAD/+5MAAAACAAIAAAD/+5QAAAACAAIAAAD/+5UAAAACAAIAAAD/+5YAAAACAAIAAAD/+5cAAAACAAIAAAD/+5gAAAACAAIAAAD/+5kAAAACAAIAAAD/+5oAAAACAAIAAAD/+5sAAAACAAIAAAD/+5wAAAACAAIAAAAA/JAAAAACAAIAAAAA/JEAAAACAAIAAAAA/JIAAAACAAIAAAAA/JMAAAACAAIAAAAA/JQAAAACAAIAAAAA/JUAAAACAAIAAAAA/JYAAAACAAIAAAAA/JcAAAACAAIAAAAA/JgAAAACAAIAAAAA/JkAAAACAAIAAAAA/JoAAAACAAIAAAAA/JsAAAACAAIAAAAA/JwAAAACAAIAAAAB/JAAAAACAAIAAAAB/JEAAAACAAIAAAAB/JIAAAACAAIAAAAB/JMAAAACAAIAAAAB/JQAAAACAAIAAAAB/JUAAAACAAIAAAAB/JYAAAACAAIAAAAB/JcAAAACAAIAAAAB/JgAAAACAAIAAAAB/JkAAAACAAIAAAAB/JoAAAACAAIAAAAB/JsAAAACAAIAAAAB/JwAAAACAAIAAAAC/JAAAAACAAIAAAAC/JEAAAACAAIAAAAC/JIAAAACAAIAAAAC/JMAAAACAAIAAAAC/JQAAAACAAIAAAAC/JUAAAACAAIAAAAC/JYAAAACAAIAAAAC/JcAAAACAAIAAAAC/JgAAAACAAIAAAAC/JkAAAACAAIAAAAC/JoAAAACAAIAAAAC/JsAAAACAAIAAAAC/JwAAAACAAIAAAAD/JAAAAACAAIAAAAD/JEAAAACAAIAAAAD/JIAAAACAAIAAAAD/JMAAAACAAIAAAAD/JQAAAACAAIAAAAD/JUAAAACAAIAAAAD/JYAAAACAAIAAAAD/JcAAAACAAIAAAAD/JgAAAACAAIAAAAD/JkAAAACAAIAAAAD/JoAAAACAAIAAAAD/JsAAAACAAIAAAAD/JwAAAACAAIAAAAj/JwAAAACAAIAAAAj/JsAAAACAAIAAAAk/JoAAAACAAIAAAAj/JkAAAACAAIAAAAj/JcAAAACAAIAAAAj/JgAAAACAAIAAAA=")
+tile_set = SubResource("TileSet_mu7ye")
+
+[node name="umm" type="CharacterBody2D" parent="Game/playing_game" unique_id=1794136329]
+position = Vector2(-16273.333, 2463.3337)
+script = ExtResource("28_m37ut")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/playing_game/umm" unique_id=1130338511]
+position = Vector2(0, 13.333333)
+shape = SubResource("CapsuleShape2D_2oiod")
+
+[node name="Idle" type="Sprite2D" parent="Game/playing_game/umm" unique_id=1849240072]
+position = Vector2(0, 6.666626)
+scale = Vector2(1.0666666, 1.0666666)
+texture = ExtResource("28_dvq1j")
+region_enabled = true
+region_rect = Rect2(8.776268, 14.385399, 13.710632, 17.585434)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Game" unique_id=1711273635]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/StaticBody2D" unique_id=1308161736]
+position = Vector2(94.80652, 3090.337)
+rotation = 0.53416455
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_cr44a")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Game/StaticBody2D" unique_id=1144194168]
+position = Vector2(1989.9998, 2126.6665)
+rotation = 0.53416455
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_cr44a")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Game/StaticBody2D" unique_id=805844589]
+position = Vector2(1734.8097, 3113.3726)
+rotation = -0.51172125
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_tcekk")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Game/StaticBody2D" unique_id=1521938058]
+position = Vector2(516.8689, 2224.546)
+rotation = -0.51172125
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_tcekk")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Game" unique_id=322199577]
+position = Vector2(4336.6665, -66.666664)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Game/StaticBody2D2" unique_id=650357600]
+position = Vector2(553.3331, 3053.3333)
+rotation = 0.48283464
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_cr44a")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Game/StaticBody2D2" unique_id=1837930990]
+position = Vector2(2036.6664, 2123.3333)
+rotation = 0.4717036
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_cr44a")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Game/StaticBody2D2" unique_id=764142504]
+position = Vector2(1920.0001, 3106.667)
+rotation = -0.53413683
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_tcekk")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Game/StaticBody2D2" unique_id=1487160565]
+position = Vector2(633.3333, 2180)
+rotation = -0.5154943
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_tcekk")
+
+[node name="Ice_Cream_activity" type="Node2D" parent="." unique_id=1479484842]
+visible = false
+script = ExtResource("22_sor6r")
+
+[node name="Backgrd" type="Sprite2D" parent="Ice_Cream_activity" unique_id=1452488846]
+position = Vector2(-2491, 274)
+scale = Vector2(0.43, 0.43)
+texture = ExtResource("17_0y2cb")
+region_enabled = true
+region_rect = Rect2(0, 0, 2632.6104, 1939.4238)
+
+[node name="IceCreamSheet5" type="Sprite2D" parent="Ice_Cream_activity" unique_id=379626711]
+position = Vector2(-2509.4026, 503.5)
+scale = Vector2(0.385, 0.385)
+texture = ExtResource("22_hiice")
+region_enabled = true
+region_rect = Rect2(2497.8113, 0, 502.18872, 1000)
+
+[node name="IceCreamSheet4" type="Sprite2D" parent="Ice_Cream_activity" unique_id=1266302634]
+position = Vector2(-2509.4026, 503.5)
+scale = Vector2(0.385, 0.385)
+texture = ExtResource("22_hiice")
+region_enabled = true
+region_rect = Rect2(1491.3693, 0, 507.48413, 1000)
+
+[node name="IceCreamSheet3" type="Sprite2D" parent="Ice_Cream_activity" unique_id=708529695]
+position = Vector2(-2509.4026, 503.5)
+scale = Vector2(0.385, 0.385)
+texture = ExtResource("22_hiice")
+region_enabled = true
+region_rect = Rect2(1004.7365, 0, 493.6751, 1000)
+
+[node name="IceCreamSheet2" type="Sprite2D" parent="Ice_Cream_activity" unique_id=646406785]
+position = Vector2(-2509.4026, 503.5)
+scale = Vector2(0.385, 0.385)
+texture = ExtResource("22_hiice")
+region_enabled = true
+region_rect = Rect2(499.28296, 0, 500.39392, 1000)
+
+[node name="IceCreamSheet" type="Sprite2D" parent="Ice_Cream_activity" unique_id=551535611]
+position = Vector2(-2509.4026, 503.5)
+scale = Vector2(0.385, 0.385)
+texture = ExtResource("22_hiice")
+region_enabled = true
+region_rect = Rect2(0, 0, 499.07404, 1000)
+
+[node name="game_camera" type="Camera2D" parent="Ice_Cream_activity" unique_id=410215031]
+position = Vector2(1666, 538)
+enabled = false
+zoom = Vector2(7.88, 7.88)
+limit_left = 1601
+limit_top = 494
+limit_bottom = 581
+
+[node name="bite" type="AudioStreamPlayer" parent="Ice_Cream_activity" unique_id=1978086163]
+stream = ExtResource("33_dvq1j")
+volume_db = -10.0
+
+[node name="bg" type="AudioStreamPlayer" parent="." unique_id=1276354984]
+stream = ExtResource("33_mepbf")
+volume_db = -10.0
+autoplay = true
+
+[node name="int" type="AudioStreamPlayer" parent="." unique_id=2072945672]
+stream = ExtResource("35_50v0s")
+volume_db = -2.0
+
+[node name="asd" type="AudioStreamPlayer" parent="." unique_id=1410336078]
+stream = ExtResource("36_mu7ye")
+volume_db = -15.0
+
+[node name="fish" type="AudioStreamPlayer" parent="." unique_id=1200118350]
+stream = ExtResource("37_2oiod")
+
+[node name="Die" type="Sprite2D" parent="." unique_id=92909426]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 3
+position = Vector2(5686.0005, 2828.9998)
+rotation = -0.85922563
+scale = Vector2(0.415, 0.415)
+texture = ExtResource("38_8bkap")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=714603542]
+libraries/ = SubResource("AnimationLibrary_b0nqf")
+
+[node name="clock" type="AudioStreamPlayer" parent="." unique_id=1298840301]
+stream = ExtResource("39_b0nqf")
+volume_db = -80.0
+autoplay = true
+
+[node name="CameraBeach" type="Camera2D" parent="." unique_id=755772411]
+position = Vector2(10152, 978)
+enabled = false
+limit_left = 5111
+limit_top = 2542
+limit_right = 6284
+limit_bottom = 3421
+position_smoothing_enabled = true
+
+[connection signal="body_entered" from="School/ToPark" to="." method="_on_to_park_body_entered"]
+[connection signal="body_entered" from="School/SchoolToStreet" to="." method="_on_school_to_street_body_entered"]
+[connection signal="body_entered" from="School/SchoolToBeach" to="." method="_on_school_to_beach_body_entered"]
+[connection signal="body_entered" from="Fishing_GamePlay/Fish Clock/Area2D" to="Fishing_GamePlay/Fish Clock" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Fishing_GamePlay/Fish Clock/Area2D" to="Fishing_GamePlay/Fish Clock" method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Park/ParkToSchool" to="." method="_on_park_to_school_body_entered"]
+[connection signal="body_entered" from="Street/StreetToSchool" to="." method="_on_street_to_school_body_entered"]
+[connection signal="body_entered" from="Street/game_level_com" to="." method="_on_game_level_com_body_entered"]
+[connection signal="body_entered" from="Street/StreetToRiver" to="." method="_on_street_to_river_body_entered"]
+[connection signal="body_entered" from="River/RiverToStreet" to="." method="_on_river_to_street_body_entered"]
+[connection signal="body_entered" from="River/activity" to="River/activity" method="_on_body_entered"]
+[connection signal="body_exited" from="River/activity" to="River/activity" method="_on_body_exited"]
+[connection signal="body_entered" from="River/Ice_cream_enter" to="River/Ice_cream_enter" method="_on_body_entered"]
+[connection signal="body_exited" from="River/Ice_cream_enter" to="River/Ice_cream_enter" method="_on_body_exited"]
+[connection signal="body_entered" from="River/Game_parlour_enter2" to="River/Game_parlour_enter2" method="_on_body_entered"]
+[connection signal="body_exited" from="River/Game_parlour_enter2" to="River/Game_parlour_enter2" method="_on_body_exited"]
+[connection signal="body_entered" from="River/Ice_cream" to="River/Ice_cream" method="_on_body_entered"]
+[connection signal="body_exited" from="River/Ice_cream" to="River/Ice_cream" method="_on_body_exited"]
+[connection signal="body_entered" from="River/Game_activity" to="River/Game_activity" method="_on_body_entered"]
+[connection signal="body_exited" from="River/Game_activity" to="River/Game_activity" method="_on_body_exited"]
+[connection signal="body_entered" from="River/Beach_activity" to="River/Beach_activity" method="_on_body_entered"]
+[connection signal="body_exited" from="River/Beach_activity" to="River/Beach_activity" method="_on_body_exited"]
